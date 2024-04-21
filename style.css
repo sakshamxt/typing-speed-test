@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d89c7;
+}
+
+.wrapper {
+    width: 770px;
+    padding: 35px;
+    background-color: white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.wrapper .content-box {
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
+
+.wrapper .input-field {
+    padding: 13px 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+}
+
+.content-box .content {
+    margin-top: 13px;
+    display: flex;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+}
+
+.content-box .result-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+}
+
+.result-details li {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-items: center;
+    gap: 5px;
+}
+
+.content button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #5d89c7;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.content button:hover {
+    background-color: #547eb0;
+}
+
+.content button:active {
+    transform: scale(0.98);
+}
+
+.typing-text p span {
+    position: relative;
+}
+
+.typing-text p span.active {
+    color: #00b9f6;
+}
+
+.typing-text p span.correct {
+    color: green;
+}
+
+.typing-text p span.incorrect {
+    color: red;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+
+::selection {
+    background: #5d89c7;
+    color: white;
+}
+
+
+.footer-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #3d5b86;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.footer-text a {
+    color: white;
+    font: bold;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.heading-text {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgb(23, 37, 53);
+}
